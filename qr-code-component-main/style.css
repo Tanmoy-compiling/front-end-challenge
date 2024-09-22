@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--slate-300);
+    color: var(--slate-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    height: 100vh;
+}
+
+img {
+    border-radius: 10px;
+    height: 38vh;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: center;
+    width: 19vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-card {
+    padding: 1rem 2rem;
+}
+
+.card .bold {
+    font-weight: 700;
+}
+
+.card #para {
+    font-weight: 500;
+    color: var(--slate-500);
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .card {
+        width: 80vw; 
+        
+    }
+
+    img {
+        height: 30vh;
+        margin-top: 1rem;
+    }
+
+    body {
+        font-size: 16px; 
+    }
+
+    .sub-card {
+        padding: 1rem;
+    }
+
+    .card #para {
+        font-size: 12px; 
+    }
+}
